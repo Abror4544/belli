@@ -364,15 +364,6 @@
 
 /*-----------------Global Styles------------------*/
 
-::-moz-selection {
-  background: #2b2b2b;
-  color: #ffffff;
-}
-
-::selection {
-  background: #2b2b2b;
-  color: #ffffff;
-}
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -566,12 +557,12 @@ body.nav-active .nav__list-item:nth-child(10) {
   text-shadow: -0 -1px 0 #000000, 0 -1px 0 #000000, -0 1px 0 #000000, 0 1px 0 #000000, -1px -0 0 #000000,
  1px -0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
  1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+ letter-spacing: 2.5px;
 }
 
 .title {
   font-size: 65px;
   font-family: "SFProDisplay-Medium";
-  letter-spacing: 7px;
 }
 
 .title span {
@@ -1310,6 +1301,10 @@ footer .polytic {
     top: 25px;
   }
 
+  .header-wrapper{
+    height: 100vh;
+  }
+
   .header .swiper-slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1359,6 +1354,10 @@ footer .polytic {
 
   .title {
     text-align: center;
+  }
+
+  section.strategy .strategy__img__block img{
+    width: 33%;
   }
 
   .linkbtn {
@@ -1500,7 +1499,7 @@ footer .polytic {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 416px) {
   footer .footer_contact {
     text-align: left;
     margin-top: 20px;
