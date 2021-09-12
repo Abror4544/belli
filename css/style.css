@@ -73,7 +73,7 @@
 .header .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
 }
 
 .header-imgblock {
@@ -91,9 +91,8 @@
 .header-imgblock img {
   display: block;
   max-width: 100%;
-  max-height: 100%;
   width: auto;
-  height: auto;
+  height: 50vh;
 }
 
 .header-imgblock,
@@ -114,10 +113,6 @@
   background: -o-linear-gradient(bottom, #28c76f 0%, #81fbb8 100%);
   background: linear-gradient(0deg, #28c76f 0%, #81fbb8 100%);
   background: -ms-linear-gradient(0deg, #28c76f 0%, #81fbb8 100%);
-}
-
-.header-imgblock.green img {
-  width: 70%;
 }
 
 .header-imgblock.yellow {
@@ -1299,10 +1294,6 @@ footer .polytic {
 @media screen and (max-width: 767px) {
   .header-nav {
     top: 25px;
-  }
-
-  .header-wrapper{
-    height: 100vh;
   }
 
   .header .swiper-slide {
