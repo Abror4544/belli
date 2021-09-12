@@ -1,15 +1,16 @@
 $(function () {
-  var swiper = new Swiper(".headerSwiper", {
-    loop: true,
-    pagination: {
-      el: ".header-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".header-button-next",
-      prevEl: ".header-button-prev",
-    },
+  $(".header .swiper-wrapper").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: $(".header-button-prev"),
+    nextArrow: $(".header-button-next"),
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
+
 
   var swiper = new Swiper(".teamSwiper", {
     slidesPerGroup: 1,
